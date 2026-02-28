@@ -6,20 +6,20 @@
 
 /* variable */
 :root {
-    --base-color: #bfa37e;
-    /* Sophisticated Warm Gold */
-    --dark-gray: #0C0C0C;
+    --base-color: #C5A059;
+    /* Sophisticated Champagne Gold */
+    --dark-gray: #0A0A0A;
     /* Deep Architectural Black */
-    --medium-gray: #1a1a1a;
+    --medium-gray: #151515;
     /* Secondary Dark Gray */
-    --white: #f8f8f8;
-    /* Premium Off-White Text */
+    --white: #F5F4F0;
+    /* Alabaster White Text */
     --font-heading: 'Marcellus', serif;
     --primary-font: 'Plus Jakarta Sans', sans-serif;
     --glass-bg: rgba(255, 255, 255, 0.05);
     /* Refined Glass */
     --glass-border: rgba(255, 255, 255, 0.08);
-    --gold-accent: #bfa37e;
+    --gold-accent: #C5A059;
 }
 
 /* reset */
@@ -140,7 +140,7 @@ textarea:-ms-input-placeholder {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 50% 40%, #2a2a2a 0%, #1a1a1a 70%);
+    background: radial-gradient(circle at 50% 40%, #2a2a2a 0%, var(--medium-gray) 70%);
     z-index: 0;
 }
 
@@ -307,7 +307,7 @@ h2 {
 .navbar .navbar-nav .simple-dropdown .dropdown-menu {
     width: 190px;
     padding: 30px 0;
-    background-color: #1a1a1a;
+    background-color: var(--medium-gray);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -509,7 +509,7 @@ footer .footer-logo img {
 .newsletter-style-02 input {
     font-size: 14px;
     padding-right: 60px !important;
-    background: #1a1a1a;
+    background: var(--medium-gray);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--white);
 }
@@ -602,7 +602,7 @@ footer ul li {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     border: none !important;
-    color: #1a1a1a !important;
+    color: var(--medium-gray) !important;
     border-radius: 0 !important;
     display: flex !important;
     align-items: center !important;
@@ -637,6 +637,54 @@ footer ul li {
     .right-image-layer {
         right: -200px;
     }
+}
+
+/* Custom Product Grid Styles */
+.shop-box {
+    background-color: #1a1a1a;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.shop-image {
+    background-color: var(--white);
+    /* Clean white background to make the product pop sharply */
+}
+
+.shop-image img {
+    /* Mix blend mode removed for perfect image clarity */
+}
+
+.shop-hover a {
+    background-color: var(--black) !important;
+    color: var(--white) !important;
+    transition: all 0.3s ease;
+}
+
+.shop-hover a:hover {
+    background-color: var(--base-color) !important;
+    color: var(--white) !important;
+}
+
+.product-overlay.bg-gradient-extra-midium-gray-transparent {
+    background: linear-gradient(to top, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.0) 100%) !important;
+}
+
+.shop-footer a {
+    color: var(--white) !important;
+}
+
+.shop-footer a:hover {
+    color: var(--base-color) !important;
+}
+
+.shop-footer .fw-500 {
+    color: var(--base-color) !important;
+}
+
+.shop-footer .fw-500 del {
+    color: var(--medium-gray) !important;
 }
 
 @media (max-width: 991px) and (min-width: 778px) {
