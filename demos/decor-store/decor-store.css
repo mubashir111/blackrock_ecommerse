@@ -146,7 +146,10 @@ textarea:-ms-input-placeholder {
 
 /* header */
 header .navbar-brand img {
-    max-height: 36px;
+    max-height: 70px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    transition: all 0.3s ease;
 }
 
 /* Logo replication from blackrock-arch */
@@ -230,8 +233,8 @@ header .navbar-brand img {
 .navbar,
 .btn.btn-large {
 
+    backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-
 }
 
 h1,
